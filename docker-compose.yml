@@ -1,0 +1,47 @@
+version: '3'
+
+services:
+  
+  mssql:
+    container_name: mssql
+    image: mcr.microsoft.com/mssql/server
+    restart: on-failure
+    environment: 
+      - ACCEPT_EULA='Y'
+      - SA_PASSWORD=HarryPotter@123
+    ports: 
+      - 1435:1433
+    networks: 
+      default:
+        aliases: 
+          - mssql
+
+  pgsql:
+    container_name: pgsql
+    image: postgres
+    restart: always
+    environment: 
+      - POSTGRES_PASSWORD=DStOWIY3sq
+    ports: 
+      - 5435:5432
+    networks: 
+      default:
+        aliases: 
+          - pgsql
+
+  nifi:
+    container_name: nifi
+    image: nifibigdata
+    restart: on-failure
+    
+    ports:
+      - 7889:8080
+    networks:
+     default:
+        aliases: 
+          - nifi
+    depends_on: 
+      - mssql
+      - pgsql
+          
+
