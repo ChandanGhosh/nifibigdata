@@ -1,7 +1,3 @@
-0) You already running Hortonworks NiFi locally 
- http://localhost:18090/nifi/
- (If not please wath this video https://www.youtube.com/watch?v=unwpt...)
-
 1) Open CMD command line 
 
 2) See what do you run in containers 
