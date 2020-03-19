@@ -1,3 +1,6 @@
+![Docker Build & Publish](https://github.com/ChandanGhosh/nifibigdata/workflows/Docker%20Build%20&%20Publish/badge.svg)
+
+
 1) Open CMD command line 
 
 2) See what do you run in containers 
