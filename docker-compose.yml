@@ -31,7 +31,7 @@ services:
 
   nifi:
     container_name: nifi
-    image: nifibigdata
+    image: chandanghosh/nifibigdata
     restart: on-failure
     
     ports:
