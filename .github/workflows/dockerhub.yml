@@ -9,6 +9,7 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+  
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -34,6 +35,7 @@ jobs:
     - name: build Nifi Docker image
       run: |
         docker build -f Dockerfile -t chandanghosh/nifibigdata
+        
     - name: docker push
       run: |
         docker push chandanghosh/nifibigdata
