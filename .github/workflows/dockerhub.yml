@@ -29,7 +29,7 @@ jobs:
         DOCKERHUB_USER: ${{ secrets.DOCKER_USER }}
         DOCKERHUB_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       run: |
-        docker login -username $DOCKERHUB_USER --password $DOCKERHUB_PASSWORD
+        docker login --username $DOCKERHUB_USER --password $DOCKERHUB_PASSWORD
 
     # Runs a set of commands using the runners shell
     - name: build Nifi Docker image
