@@ -8,7 +8,7 @@ services:
     restart: on-failure
     environment: 
       - ACCEPT_EULA='Y'
-      - SA_PASSWORD=HarryPotter@123
+      - SA_PASSWORD=YouBigLongSQLServerPassword!123
     ports: 
       - 1435:1433
     networks: 
@@ -21,7 +21,7 @@ services:
     image: postgres
     restart: always
     environment: 
-      - POSTGRES_PASSWORD=DStOWIY3sq
+      - POSTGRES_PASSWORD=postgrespassword
     ports: 
       - 5435:5432
     networks: 
