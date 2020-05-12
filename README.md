@@ -75,11 +75,8 @@ Postgresql    --  `jdbc:postgresql://postgresql:5432/BikeStores`
  
  (POSTGRESQL) -- `org.postgresql.Driver`
                            
- Database User(MSSQL) - sa / HarryPotter@123
-            (POSTGRESQL) - postgres / password
-
- Password - HarryPotter@123
- Password - password
+ Database User(MSSQL) - sa / YourBigLongPassword!123
+            (POSTGRESQL) - postgres / postgrespassword
  
  Database Driver Location(s) 
  
